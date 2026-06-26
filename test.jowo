@@ -1,0 +1,23 @@
+fungsi tambah(a, b) {
+    wangsul a + b
+}
+
+tulis("============================")
+tulis("  Program BosoJowo Sederhana")
+tulis("============================")
+
+batas = 5
+angka = 1
+
+baleni (angka <= batas) {
+    yen (angka == 3) {
+        tulis("Angka 3 - Iki tengah-tengah")
+    } liyane {
+        tulis("Angka saiki:")
+        tulis(angka)
+    }
+    angka = tambah(angka, 1)
+}
+
+tulis("Program rampung!")
+mlebu("Pencet Enter kanggo nutup...")

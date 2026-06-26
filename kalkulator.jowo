@@ -1,0 +1,39 @@
+tulis("===============================")
+tulis("       KALKULATOR JOWO")
+tulis("===============================")
+tulis("1. Tambah (+)")
+tulis("2. Sudo (-)")
+tulis("3. Ping (*)")
+tulis("4. Poro (/)")
+tulis("===============================")
+
+pilihan = mlebu_angka("Pilih operasi (1/2/3/4): ")
+angka1 = mlebu_angka("Lebokno angka pertama: ")
+angka2 = mlebu_angka("Lebokno angka keloro: ")
+
+hasil = 0
+
+yen (pilihan == 1) {
+    hasil = angka1 + angka2
+} liyane {
+    yen (pilihan == 2) {
+        hasil = angka1 - angka2
+    } liyane {
+        yen (pilihan == 3) {
+            hasil = angka1 * angka2
+        } liyane {
+            yen (pilihan == 4) {
+                hasil = angka1 / angka2
+            } liyane {
+                tulis("Pilihan ora ono!")
+            }
+        }
+    }
+}
+
+yen (pilihan >= 1 lan pilihan <= 4) {
+    tulis("Hasile iku: ")
+    tulis(hasil)
+}
+
+mlebu("Pencet Enter kanggo nutup...")
