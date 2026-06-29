@@ -1,0 +1,69 @@
+fungsi tambah(a, b) {
+    wangsul a + b
+}
+
+fungsi kurang(a, b) {
+    wangsul a - b
+}
+
+fungsi ping(a, b) {
+    wangsul a * b
+}
+
+fungsi poro(a, b) {
+    wangsul a / b
+}
+
+fungsi tampil_menu() {
+    tulis("===================================")
+    tulis("       KALKULATOR BOSO JOWO")
+    tulis("===================================")
+    tulis("1. Tambah  (+)  → Nambah angka")
+    tulis("2. Sudo    (-)  → Ngurangi angka")
+    tulis("3. Ping    (*)  → Ngalino angka")
+    tulis("4. Poro    (/)  → Mbagi angka")
+    tulis("===================================")
+}
+
+fungsi main() {
+    tampil_menu()
+
+    pilihan = mlebu_angka("Pilihno operasi (1/2/3/4)  : ")
+    angka1  = mlebu_angka("Lebokno angka kapisan      : ")
+    angka2  = mlebu_angka("Lebokno angka kapindho     : ")
+
+    hasil = 0
+
+    yen (pilihan == 1) {
+        hasil = tambah(angka1, angka2)
+        tulis("Operasine  : Tambah (+)")
+    } liyane {
+        yen (pilihan == 2) {
+            hasil = kurang(angka1, angka2)
+            tulis("Operasine  : Sudo (-)")
+        } liyane {
+            yen (pilihan == 3) {
+                hasil = ping(angka1, angka2)
+                tulis("Operasine  : Ping (*)")
+            } liyane {
+                yen (pilihan == 4) {
+                    hasil = poro(angka1, angka2)
+                    tulis("Operasine  : Poro (/)")
+                } liyane {
+                    tulis("Pilihan ora ono! Pilihno maneh 1-4.")
+                }
+            }
+        }
+    }
+
+    yen (pilihan >= 1 lan pilihan <= 4) {
+        tulis("-----------------------------------")
+        tulis("Hasile yaiku:")
+        tulis(hasil)
+        tulis("===================================")
+    }
+
+    mlebu("Pencet Enter kanggo nutup...")
+}
+
+main()

@@ -1,0 +1,27 @@
+fungsi tambah(a, b) {
+    wangsul a + b
+}
+
+fungsi main() {
+    tulis("=== Ujian Akhir Boso Jowo ===")
+    
+    angka_awal = 1
+    baleni (angka_awal <= 3) {
+        tulis("Iterasi ke-")
+        tulis(angka_awal)
+        angka_awal = angka_awal + 1
+    }
+
+    tes_optimasi = 10 * 5 + 2
+    yen (tes_optimasi > 50) {
+        tulis("Optimasi Matematika Berhasil!")
+    } liyane {
+        tulis("Gagal Optimasi")
+    }
+
+    hasil = tambah(10, 20)
+    tulis("Hasil Tambah:")
+    tulis(hasil)
+}
+
+main()

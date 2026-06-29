@@ -1,0 +1,16 @@
+fungsi main() {
+    tulis("Halo! Ini program pertamaku!")
+    
+    nama = "Galuh"
+    tulis("Nama saya:")
+    tulis(nama)
+    
+    angka = 5
+    yen (angka > 3) {
+        tulis("Angkanya besar!")
+    } liyane {
+        tulis("Angkanya kecil!")
+    }
+}
+
+main()
